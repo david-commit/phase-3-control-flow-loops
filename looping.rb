@@ -43,9 +43,8 @@ end
 
 def reverse_string(str)
   # your code here
-  i = 0
-  while i <= str.length
-    puts str.reverse
-    i += 1
-  end
+  split_str = str.split("")
+  reversed = []
+  str.size.times { reversed << split_str.pop }
+  reversed.join
 end
